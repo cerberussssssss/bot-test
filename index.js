@@ -53,4 +53,4 @@ message.channel.send("https://www.google.com/search?q=meme&client=firefox-b-d&sx
 })
 
 
-Client.login("OTIxMDg5NjY5Mjg5MDgyOTAw.Ybt1mg.NRV2q8nZyYd1H4QwdH-SZRAqVXU")
+Client.login("OTIxMDg5NjY5Mjg5MDgyOTAw.Ybt1mg.pAxmPPrHke_3_tJCoPtsGSuDve8")
