@@ -1,15 +1,56 @@
-const discord = require("discord.js")
-const bot = new discord.Client()
+let Discord = require("discord.js");
+let Client = new Discord.Client();
 
-bot.on('ready', () => {
-    bot.user.setActivity("Something....")
-    console.log("Logged in successfully :D")
+
+
+Client.on("message", message => {
+
+if (message.content === "ping") {
+
+message.channel.send("pong")
+
+}
+
 })
 
-bot.on('message', message => {
-    if(message.content === "!ping") {
-        message.channel.send("pong!")
-    }
+Client.on("message", message => {
+
+if (message.content === "Command") {
+
+message.channel.send("Silahkan cek link berikut")
+}
+
 })
 
-bot.login("Nzc1MjI2Nzg3OTk0MDA5NjMx.X6jQNQ.jmlzodbksWOvkZGV6JE7T46toWc") //Your own token, thus one sadly won't work :P
+Client.on("message", message => {
+
+if (message.content === "PaketA") {
+
+message.channel.send("https://www.google.com/search?q=meme&client=firefox-b-d&sxsrf=AOaemvKLqL72tJMLMWDAnt4nErnawrcsJA:1631799924988&tbm=isch&source=iu&ictx=1&fir=lLODzzlfHmoxSM%252C8LkjXcth-iXjoM%252C_&vet=1&usg=AI4_-kQcH3dkxYGk7sOpBaxM0j0E_HyfnA&sa=X&ved=2ahUKEwik5f220IPzAhUghf0HHfE9B_YQ9QF6BAgOEAE#imgrc=lLODzzlfHmoxSM")
+
+}
+
+})
+
+Client.on("message", message => {
+
+if (message.content === "PaketB") {
+
+message.channel.send("https://www.google.com/search?q=meme&client=firefox-b-d&sxsrf=AOaemvKLqL72tJMLMWDAnt4nErnawrcsJA:1631799924988&tbm=isch&source=iu&ictx=1&fir=lLODzzlfHmoxSM%252C8LkjXcth-iXjoM%252C_&vet=1&usg=AI4_-kQcH3dkxYGk7sOpBaxM0j0E_HyfnA&sa=X&ved=2ahUKEwik5f220IPzAhUghf0HHfE9B_YQ9QF6BAgOEAE#imgrc=lLODzzlfHmoxSM")
+
+}
+
+})
+
+Client.on("message", message => {
+
+if (message.content === "PaketC") {
+
+message.channel.send("https://www.google.com/search?q=meme&client=firefox-b-d&sxsrf=AOaemvKLqL72tJMLMWDAnt4nErnawrcsJA:1631799924988&tbm=isch&source=iu&ictx=1&fir=lLODzzlfHmoxSM%252C8LkjXcth-iXjoM%252C_&vet=1&usg=AI4_-kQcH3dkxYGk7sOpBaxM0j0E_HyfnA&sa=X&ved=2ahUKEwik5f220IPzAhUghf0HHfE9B_YQ9QF6BAgOEAE#imgrc=lLODzzlfHmoxSM")
+
+}
+
+})
+
+
+Client.login("OTIxMDg5NjY5Mjg5MDgyOTAw.Ybt1mg.NRV2q8nZyYd1H4QwdH-SZRAqVXU")
